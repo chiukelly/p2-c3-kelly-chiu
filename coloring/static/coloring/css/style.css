@@ -1,0 +1,55 @@
+#color-palette {
+  width: 100%;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 0;
+}
+
+.swatch {
+  width: 150px;
+  height: 50px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+#myCanvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#red {
+  background-color: red;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#green {
+  background-color: green;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#purple {
+  background-color: purple;
+}
+
+#black {
+  background-color: black;
+}
+
