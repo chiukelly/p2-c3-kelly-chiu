@@ -58,7 +58,9 @@
             currSwatch = $(this);
             // add color to the color palette history
 					  cp.history.push($(this).css("background-color"));
-            var rec = new paper.Path.Rectangle(4, 702, 744, 100);
+            var rectangle = new paper.Rectangle(4, 702, 704, 100);
+            var radius = new paper.Size(20, 20);
+            var rec = new paper.Path.Rectangle(rectangle,radius);
 
             rec.fillColor = new paper.Color({
                 gradient: {
@@ -67,12 +69,11 @@
                 origin: (4,702),
                 destination: (744,100)
             });
-
             rec.onMouseDown = function (event) {
               var ctx = canvas.getContext("2d");
               var x = (event.point.x) * 2;
               var y = (event.point.y) * 2;
-
+            
               const imgData = ctx.getImageData(x, y, 1, 1);
               const [r, g, b] = imgData.data;
     
